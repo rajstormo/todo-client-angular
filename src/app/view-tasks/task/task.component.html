@@ -1,0 +1,10 @@
+<li class="border p-2 hover rounded d-flex justify-content-between align-items-center">
+  <div class="d-flex flex-column ">
+    <h5>{{ task.title }}</h5>
+    <p>{{ task.description }}</p>
+  </div>
+  <div class="d-flex gap-3">
+    <a routerLink="/edit-task/{{task._id}}" class="btn btn-warning ">Edit</a>
+    <a routerLink="/delete-task/{{task._id}}"class="btn btn-danger">Delete</a>
+  </div>
+</li>

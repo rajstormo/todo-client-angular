@@ -1,0 +1,8 @@
+<main class="bg-light pt-4 h-100">
+  <div class="container">
+    <h2 class="mb-4 text-secondary ">Your Tasks</h2>
+    <ul class="d-flex flex-column list-unstyled gap-3">
+      <app-task *ngFor="let task of tasks" [task]="task"></app-task>
+    </ul>
+  </div>
+</main>

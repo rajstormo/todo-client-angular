@@ -1,0 +1,16 @@
+<div class="container mt-4 ">
+  <h2 class="mb-4"> Create New Todo </h2>
+  <form #taskData="ngForm" (ngSubmit)="handleNewTask(taskData.value)">
+    <div class="form-group mb-3">
+      <label for="name" class="form-label">Task Name</label>
+      <input type="text" class="form-control" ngModel id="name" name="title" placeholder="Enter New Task....">
+    </div>
+
+    <div class="form-group mb-3">
+      <label for="name" class="form-label">Task Description</label>
+      <input type="text" ngModel  class="form-control" name="description" placeholder="Enter description">
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Add Task</button>
+  </form>
+</div>
